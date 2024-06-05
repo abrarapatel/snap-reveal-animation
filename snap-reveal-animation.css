@@ -1,0 +1,62 @@
+.swipe-right {
+    transform: translateX(-100%);
+    filter: blur(4px);
+    transition: 1.3s;
+    opacity: 0;
+}
+
+.swipe-left {
+    transform: translateX(100%);
+    filter: blur(4px);
+    transition: 1.3s;
+    opacity: 0;
+}
+
+.swipe-up {
+    transform: translateY(100%);
+    filter: blur(4px);
+    transition: 1.3s;
+    opacity: 0;
+}
+
+.swipe-down {
+    transform: translateY(-100%);
+    filter: blur(4px);
+    transition: 1.3s;
+    opacity: 0;
+}
+
+.fade-in {
+    opacity: 0;
+    filter: blur(4px);
+    transition: 1.3s;
+    transition-delay: 1s;
+}
+
+.scale{
+    transform: scale(70%);
+    opacity: 0;
+    filter: blur(4px);
+    transition: 1.3s;
+}
+
+.swipe-right.anime-active,
+.swipe-left.anime-active,
+.swipe-up.anime-active,
+.swipe-down.anime-active {
+    transform: translateX(0);
+    transform: translateY(0);
+    filter: blur(0);
+    opacity: 1;
+}
+
+.fade-in.anime-active {
+    opacity: 1;
+    filter: blur(0);
+}
+
+.scale.anime-active{
+    transform: scale(100%);
+    filter: blur(0);
+    opacity: 1;
+}
