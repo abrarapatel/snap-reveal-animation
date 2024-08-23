@@ -40,6 +40,13 @@
     transition: 1.3s;
 }
 
+.scale-out {
+    transform: scale(120%);
+    opacity: 0;
+    filter: blur(4px);
+    transition: 1.3s;
+}
+
 .swipe-right.anime-active,
 .swipe-left.anime-active,
 .swipe-up.anime-active,
@@ -55,8 +62,9 @@
     filter: blur(0);
 }
 
+.scale-out.anime-active,
 .scale.anime-active{
-    transform: scale(50%);
+    transform: scale(100%);
     filter: blur(0);
     opacity: 1;
 }
